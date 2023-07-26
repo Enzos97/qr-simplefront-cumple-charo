@@ -5,7 +5,7 @@ const Ganaste = React.lazy(() => import('./components/ganaste/Ganaste'));
 const Gracias = React.lazy(() => import('./components/perdiste/Gracias'));
 
 const App = () => {
-  const [countdown, setCountdown] = useState(5);
+  const [countdown, setCountdown] = useState(3);
 
   useEffect(() => {
     const timer = setInterval(() => {
