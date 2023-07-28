@@ -1,9 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fadeOutOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.50;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
 /* Utilidades de fondo */
 .bg-image {
-  background-image: url('../public/charo.jpeg');
+  background-image: url('../charo.jpeg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
